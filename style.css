@@ -650,10 +650,18 @@
 
     input[type="button"] {
         width: calc(70% + 35px); /* Ajusta a largura para compensar diferenças */
-        background-color: rgb(239, 71, 35);
-        color: #ffff;
+        color: rgb(239, 71, 35);
         font-family: Acherus, sans-serif;
         cursor: pointer;
+        border: 1px solid rgb(239, 71, 35);
+        background-color: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+
+    input[type="button"]:hover {
+        background-color: rgb(239, 71, 35);
+        color: #ffff;
+        transition: all 0.3s ease-in-out;
     }
 
     footer {
