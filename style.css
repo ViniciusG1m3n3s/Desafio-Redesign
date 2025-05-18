@@ -30,22 +30,18 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: url('images/space.svg') center/cover no-repeat;
-        filter: blur(5px);
         z-index: -1;
         border-radius: 0 0 50px 50px;
     }
 
     .banner {
-        position: relative; 
-        background: linear-gradient(to left, #d32100, #af0f1a, #880c21, #600f21, #39101a, #320d19, #2b0a18, #240616, #360426, #45003b, #500056, #540075);
+        position: relative;
         background-size: 600% 600%;
         display: flex;
         flex-direction: column;
         height: 100%;
         width: 100%;
-        animation: gradient 10s ease infinite;
-        z-index: 1; 
+        z-index: 1;
         border-radius: 0 0 50px 50px;
     }
 
@@ -65,15 +61,15 @@
     .menu {
         font-family: AcherusLight, sans-serif;
         display: flex;
-        align-items: center; 
-        justify-content: space-between; 
+        align-items: center;
+        justify-content: space-between;
         margin: 30px 150px 0 150px;
     }
 
     .menu img {
-        height: 30px;
-        margin-right: 30px;
-        transition: all 0.3s ease-in-out; 
+        height: 40px;
+        margin-right: 40px;
+        transition: all 0.3s ease-in-out;
     }
 
     .menu img:hover {
@@ -83,7 +79,7 @@
     }
 
     .menuitem {
-        margin-left: auto; 
+        margin-left: auto;
         display: flex;
         align-items: center;
     }
@@ -98,7 +94,7 @@
         z-index: 1000;
         display: none;
     }
-    
+
     .mobile-sidebar {
         position: fixed;
         top: 0;
@@ -114,7 +110,7 @@
         color: rgb(0, 0, 0);
         transition: right 0.3s ease-in-out;
     }
-    
+
     .mobile-sidebar a {
         text-decoration: none;
         color: rgb(0, 0, 0);
@@ -135,7 +131,7 @@
         align-self: flex-end;
         z-index: 999;
     }
-    
+
     .mobile-sidebar.active {
         right: 0;
     }
@@ -147,7 +143,7 @@
 
     .menu a {
         text-decoration: none;
-        margin: 0 5px; 
+        margin: 0 5px;
         padding: 8px 20px;
         border-radius: 100px;
         box-sizing: border-box;
@@ -156,14 +152,14 @@
 
     .menu a:hover {
         font-family: Acherus, sans-serif;
-        font-weight: normal; 
+        font-weight: normal;
         text-decoration: none;
         background-color: #ffff;
-        color: rgba(255,61,84,1);
+        color: rgb(15, 98, 254);
     }
 
     #contato:active {
-        font-weight: normal; 
+        font-weight: normal;
         text-decoration: none;
         background-color: #ffff;
         color: rgba(255,61,84,1);
@@ -178,15 +174,15 @@
     }
 
     .dot2 {
-        color: rgb(84, 0, 117);
-        text-shadow: rgb(255, 255, 255) 0px 0 20px; 
+        color: #0f62fe;;
+        text-shadow: rgba(255, 255, 255, 0.397) 0px 0 20px;
 
     }
 
     .dot1 {
-        color: rgb(239, 71, 35);
-        text-shadow: rgb(255, 255, 255) 0px 0 20px; 
-        
+        color: #0f62fe;
+        text-shadow: rgba(255, 255, 255, 0.397) 0px 0 20px;
+
     }
 
     .main_title h1 {
@@ -196,7 +192,6 @@
         color: white;
         margin-top: 0;
         margin-bottom: 10px;
-        text-shadow: rgba(26, 1, 1, 0.555) 0px 0 20px;    
     }
 
     .main_title p {
@@ -204,8 +199,8 @@
         margin: 0;
         font-weight: 100;
         color: white;
-        text-shadow: rgb(255, 255, 255) 0px 0 20px; 
-        margin-top: 10px;   
+        text-shadow: rgba(255, 255, 255, 0.397) 0px 0 20px;
+        margin-top: 10px;
     }
 
     .banner_buttons {
@@ -221,7 +216,7 @@
         font-weight: 600;
         text-decoration: none;
         background-color: #ffff;
-        color: rgb(239, 71, 35);
+        color: #121417;
         padding: 12px 20px;
         border-radius: 100px;
         transition: all 0.3s ease-in-out;
@@ -230,7 +225,7 @@
 
     .start:hover {
         transition: all 0.3s ease-in-out;
-        background: rgb(239, 71, 35);
+        background: #062766;
         transition: all 0.3s ease-in-out;
         color: #ffff;
         -webkit-box-shadow: 0px 0px 46px -10px rgba(255, 255, 255, 0.678);
@@ -238,12 +233,25 @@
         box-shadow: 0px 0px 46px -10px rgba(255, 255, 255, 0.781);
     }
 
+    .pulse {
+        animation: pulse-animation 2s infinite;
+        }
+
+    @keyframes pulse-animation {
+        0% {
+            box-shadow: 0 0 0 0px rgba(15, 99, 254, 0.405)
+        }
+        100% {
+            box-shadow: 0 0 0 20px rgba(18, 20, 23, 0.455)
+        }
+    }
+
     .learn {
         font-family: AcherusLight, sans-serif;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 100;
         text-decoration: none;
-        padding: 12px 13px;
+        padding: 10px 11px;
         border-radius: 100px;
         color: #ffff;
         border: 1px solid #ffff;
@@ -252,9 +260,9 @@
     }
 
     .learn:hover {
-        -webkit-box-shadow: 0px 0px 46px -10px rgba(255, 255, 255, 0.678);
-        -moz-box-shadow: 0px 0px 46px -10px rgba(255, 255, 255, 0.678);
-        box-shadow: 0px 0px 46px -10px rgba(255, 255, 255, 0.781);
+        -webkit-box-shadow: 0px 0px 46px -10px rgba(255, 255, 255, 0.432);
+        -moz-box-shadow: 0px 0px 46px -10px rgba(255, 255, 255, 0.432);
+        box-shadow: 0px 0px 46px -10px rgba(255, 255, 255, 0.432);
     }
 
     .solucoes {
@@ -277,15 +285,15 @@
 
     .titulo-solucoes {
         font-family: AcherusLight, sans-serif;
-        font-size: 55px; 
-        font-weight: 500; 
+        font-size: 55px;
+        font-weight: 500;
         text-align: center;
-        line-height: 1.2; 
+        line-height: 1.2;
         margin: 30px 0px 30px 0px;
     }
 
     .bold-solucoes {
-        font-weight: bold; 
+        font-weight: bold;
         font-size: inherit;
         transition: all 0.3s linear;
     }
@@ -301,7 +309,7 @@
         box-sizing: border-box;
         height: 300px;
         width: 300px;
-        background: 
+        background:
         linear-gradient(#ffffff 0 0) padding-box, /*this is your grey background*/
         #9f9d9e;
         border: 2px solid transparent;
@@ -314,7 +322,7 @@
     }
 
     .card:hover {
-        background: 
+        background:
         linear-gradient(#ffffff 0 0) padding-box, /*this is your grey background*/
         linear-gradient(to left, #d32100, #af0f1a, #880c21, #600f21, #39101a, #320d19, #2b0a18, #240616, #360426, #45003b, #500056, #540075);
         border: 2px solid transparent;
@@ -373,7 +381,7 @@
     }
 
     .gradient {
-        position: relative; 
+        position: relative;
         background: linear-gradient(213deg, #ef482365, #01010168, #54007572);
         background-size: 600% 600%;
         display: flex;
@@ -382,7 +390,7 @@
         align-items: center;
         height: 100%;
         width: 100%;
-        z-index: 1; 
+        z-index: 1;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
         animation: gradient 10s ease infinite;
@@ -396,7 +404,7 @@
 
     .gradient b {
         font-weight: 800;
-        text-shadow: rgb(255, 255, 255) 0px 0 20px; 
+        text-shadow: rgb(255, 255, 255) 0px 0 20px;
     }
 
     .biglegaltech {
@@ -467,7 +475,7 @@
     }
 
     .gradient_news {
-        position: relative; 
+        position: relative;
         background: linear-gradient(213deg, #ef482365, #01010168, #54007572);
         background-size: 600% 600%;
         display: flex;
@@ -476,7 +484,7 @@
         align-items: flex-start;
         height: 100%;
         width: 100%;
-        z-index: 1; 
+        z-index: 1;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
         animation: gradient 10s ease infinite;
@@ -491,7 +499,7 @@
 
     .gradient_news b {
         font-weight: 800;
-        text-shadow: rgb(255, 255, 255) 0px 0 20px; 
+        text-shadow: rgb(255, 255, 255) 0px 0 20px;
     }
 
     .news_btn {
@@ -554,14 +562,14 @@
     }
 
     .contato_gradient {
-        position: relative; 
+        position: relative;
         background: linear-gradient(213deg, #ef482365, #01010168, #54007572);
         background-size: 600% 600%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 50%;
-        z-index: 1; 
+        z-index: 1;
         border-top-left-radius: 50px;
         animation: gradient 10s ease infinite;
         padding-left: 150px;
@@ -667,8 +675,6 @@
     footer {
         font-family: AcherusLight, sans-serif;
         width: 100%;
-        background: linear-gradient(to left, #d3200053, #af0f1a61, #880c2174, #600f2066, #39101a7e, #320d197b, #2b0a1885, #2406168e, #36042689, #45003b7b, #5000566e, #5400757b),
-        url('images/footer.png') center/cover no-repeat;
         color: white;
         border-radius: 50px 50px 0px 0px;
     }
@@ -710,28 +716,28 @@
 
     .facebook:hover {
         color: rgb(239, 71, 35);
-        text-shadow: rgba(255, 255, 255, 0.311) 0px 0 20px; 
+        text-shadow: rgba(255, 255, 255, 0.311) 0px 0 20px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
 
     .linkedin:hover {
         color: rgb(239, 71, 35);
-        text-shadow: rgba(255, 255, 255, 0.311) 0px 0 20px; 
+        text-shadow: rgba(255, 255, 255, 0.311) 0px 0 20px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
 
     .insta:hover {
         color: rgb(239, 71, 35);
-        text-shadow: rgba(255, 255, 255, 0.311) 0px 0 20px; 
+        text-shadow: rgba(255, 255, 255, 0.311) 0px 0 20px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
 
     .youtube:hover {
         color: rgb(239, 71, 35);
-        text-shadow: rgba(255, 255, 255, 0.311) 0px 0 20px; 
+        text-shadow: rgba(255, 255, 255, 0.311) 0px 0 20px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
     }
@@ -741,11 +747,11 @@
             overflow-x: hidden;
             width: 100%;
         }
-        
+
         * {
             box-sizing: border-box;
         }
-        
+
         .menu {
             margin: 30px 30px 0 30px;
         }
@@ -757,7 +763,6 @@
 
         .background-image {
             display: 100%;
-            background: url('images/mobilewpp.svg') center/cover no-repeat;
         }
 
         .banner {
@@ -774,7 +779,9 @@
         }
 
         .main_title h1 {
-            font-size: 50px;
+            font-size: 38px;
+            line-break: anywhere;
+            text-align: center;
         }
 
         .solucoes_title {
@@ -790,7 +797,7 @@
         .banner_buttons {
             margin: 30px 10px 0 10px;
         }
-        
+
         .start, .learn {
             font-size: 13px;
         }

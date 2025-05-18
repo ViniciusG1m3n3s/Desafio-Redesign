@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+.container {
+    width: 1000px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+    border-radius: 15px;
+}
+    
+.div1 {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+    background-color: aqua;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.div2 {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    background-color: red;
+}
+
+.div3 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 1;
+    background-color: blue;
+}
+
+.div4 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 3;
+    background-color: blueviolet;
+}
+
+.div5 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 5;
+    background-color: brown;
+}
+
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 5;
+    background-color: chartreuse;
+}
+
+.div8 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 5;
+    background-color: aquamarine;
+}    
+</style>
+<body>
+    <div class="container">
+        <div class="parent">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+            <div class="div5">5</div>
+            <div class="div7">7</div>
+            <div class="div8">8</div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+<script>
+    VANTA.NET({
+        el: ".div1",
+        mouseControls: true,
+        touchControls: false,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x0f62fe,
+        backgroundColor: 0x121417,
+        points: 24.0,
+        maxDistance: 22.0,
+        spacing: 20.0
+    });
+
+    setTimeout(() => {
+        const canvas = document.querySelector('.div1 canvas');
+    if (canvas) {
+        canvas.style.borderRadius = "15px 15px 15px 15px";
+        canvas.style.overflow = "hidden";
+    }
+    }, 300);
+</script>
+</body>
+</html>

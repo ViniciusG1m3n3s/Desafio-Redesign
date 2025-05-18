@@ -1,0 +1,14 @@
+
+<svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text { font: bold 48px 'Arial', sans-serif; fill: #FFFFFF; }
+    .xdot { fill: #0F62FE; }
+    .line { stroke: #0F62FE; stroke-width: 2; }
+  </style>
+  <rect width="100%" height="100%" fill="transparent" />
+  <text x="0" y="65" font-family="Arial" font-size="48" fill="#000000">neuro</text>
+  <text x="180" y="65" font-family="Arial" font-size="48" fill="#000000">x</text>
+  <circle cx="240" cy="25" r="7" class="xdot"/>
+  <circle cx="200" cy="65" r="7" class="xdot"/>
+  <line x1="200" y1="65" x2="240" y2="25" class="line"/>
+</svg>
